@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+  body
+    h1= title
+    form(action="/", method="POST")
+      input(type="text", name="filename")
+      input(type="submit", value="submit")
+    ul
+      each file in list
+        if file
+          li
+            a(href=file.link) #{file.name}

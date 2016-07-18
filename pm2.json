@@ -1,0 +1,9 @@
+{
+  "apps": [{
+    "name": "night-watch",
+    "script": "es/index.js",
+    "interpreter": "babel-node",
+    "watch": "./es",
+    "log": "pm2.log"
+  }]
+}
